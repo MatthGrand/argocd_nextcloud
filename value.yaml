@@ -1,0 +1,11 @@
+nextcloud:
+  host: nextcloud.example.com  # Remplace par ton nom de domaine
+  username: admin
+  password: SuperSecretPassword
+
+mariadb:
+  enabled: true
+  auth:
+    rootPassword: mariadb-root-password
+    password: mariadb-password
+    database: nextcloud
