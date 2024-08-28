@@ -499,7 +499,7 @@ cronjob:
 
 service:
   type: NodePort
-  -protocol: TCP
+  protocol: TCP
   port: 80
   loadBalancerIP: ""
   nodePort: 30080
