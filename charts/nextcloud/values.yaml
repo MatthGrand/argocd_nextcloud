@@ -95,7 +95,7 @@ nextcloud:
     subPath:
   # if set, we'll template this list to the NEXTCLOUD_TRUSTED_DOMAINS env var
   trustedDomains:
-    - "10.212.134.121"
+    - "*"
   ## SMTP configuration
   mail:
     enabled: false
