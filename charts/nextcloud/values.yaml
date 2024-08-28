@@ -498,11 +498,12 @@ cronjob:
   #   readOnlyRootFilesystem: true
 
 service:
-  type: NodePort
+    type: NodePort
+    nodePort: 30080
   protocol: TCP
   port: 80
   loadBalancerIP: ""
-  nodePort: 30080
+  
   annotations: {}
     ## Insert your annotations such as below
     # test/test: pumuckel
