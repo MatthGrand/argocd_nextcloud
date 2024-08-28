@@ -89,7 +89,7 @@ nextcloud:
     smtpHostKey: smtp-host
   update: 0
   # If web server is not binding default port, you can define it
-  containerPort: 8080
+  containerPort: 3080
   datadir: /var/www/html/data
   persistence:
     subPath:
@@ -324,8 +324,8 @@ nginx:
     tag: alpine
     pullPolicy: IfNotPresent
 
-  containerPort: 80
-
+  containerPort: 3080
+  
   config:
     # This generates the default nginx config as per the nextcloud documentation
     default: true
@@ -499,7 +499,7 @@ cronjob:
 
 service:
   type: NodePort
-  port: 80
+  port: 3080
   nodePort: 30080
   loadBalancerIP: ""
   annotations: {}
