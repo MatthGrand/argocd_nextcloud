@@ -499,12 +499,10 @@ cronjob:
 
 service:
   type: NodePort
+  -protocol: TCP
+  port: 80
   loadBalancerIP: ""
   nodePort: 30080
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 8080
   annotations: {}
     ## Insert your annotations such as below
     # test/test: pumuckel
